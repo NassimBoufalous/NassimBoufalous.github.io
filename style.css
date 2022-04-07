@@ -529,8 +529,8 @@ th,tr,td{
 .owl-dot:hover{
     background: crimson!important;
 }
-.veille .title::before,.title::before
- {
+.veille .title::before,
+ .title::before{
     background: #111;
 }
 .veille .title::after{
