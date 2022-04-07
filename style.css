@@ -164,8 +164,8 @@ section .title::after{
 
 
 .image{
- padding-left:100px;
- width: 65%;
+ padding-left:90px;
+ width: 70%;
 }
 
 th,tr,td{
@@ -368,24 +368,41 @@ th,tr,td{
     margin-bottom: 10px;
     color:white;
 }
-.skills .skills-content .left p{
-    text-align: justify;
+.skills .skills-content .right {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color:white;
 }
-.skills .skills-content .left a{
-    display: inline-block;
-    background: crimson;
-    color: #fff;
-    font-size: 18px;
+
+
+.skills .skills-content .left .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .left .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+    color:white;
+}
+.skills .skills-content .left span{
     font-weight: 500;
-    padding: 8px 16px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid crimson;
-    transition: all 0.3s ease;
+    font-size: 18px;
 }
-.skills .skills-content .left a:hover{
-    color: white;
-    background: none;
+.skills .skills-content .left .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.skills .skills-content .left .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
 }
 .skills .skills-content .right .bars{
     margin-bottom: 15px;
@@ -429,6 +446,27 @@ th,tr,td{
 }
 .skills-content .right .mysql::before{
     width: 85%;
+}
+.skills-content .right .post::before{
+    width: 80%;
+}
+.skills-content .left .post::before{
+    width: 80%;
+}
+.skills-content .left .react::before{
+    width: 50%;
+}
+.skills-content .left .Api::before{
+    width: 75%;
+}
+.skills-content .left .Andr::before{
+    width: 75%;
+}
+.skills-content .left .Tu::before{
+    width: 90%;
+}
+.skills-content .left .Model::before{
+    width: 70%;
 }
 
 /*  section styling */
@@ -491,7 +529,14 @@ th,tr,td{
 .owl-dot:hover{
     background: crimson!important;
 }
-
+.veille .title::before,.title::before
+ {
+    background: #111;
+}
+.veille .title::after{
+    content: "Comment je me renseigne";
+    
+}
 /* contact section styling */
 .contact .contact-content .column{
     width: calc(50% - 30px);
