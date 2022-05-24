@@ -463,7 +463,7 @@ th,tr,td{
     width: 75%;
 }
 .skills-content .left .Tu::before{
-    width: 90%;
+    width: 100%;
 }
 .skills-content .left .Model::before{
     width: 70%;
